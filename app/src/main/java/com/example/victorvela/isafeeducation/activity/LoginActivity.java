@@ -1,4 +1,4 @@
-package com.example.victorvela.isafeeducation;
+package com.example.victorvela.isafeeducation.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,16 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.victorvela.isafeeducation.activity.LoginActivity;
+import com.example.victorvela.isafeeducation.R;
 
-public class HomeActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private Button buttonEntrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_login);
 
         buttonEntrar = findViewById(R.id.entrarAdministrador);
 
@@ -23,11 +23,12 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CadastroConsultaActivity.class);
 
                 startActivity(intent);
 
             }
         });
     }
+
 }
