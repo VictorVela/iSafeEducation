@@ -8,6 +8,8 @@ import android.arch.persistence.room.PrimaryKey;
 @Entity(tableName = "TB_administrador", foreignKeys = {@ForeignKey(entity = Professor.class, parentColumns = "ID", childColumns = "professor_id"),
         @ForeignKey(entity = Aluno.class, parentColumns = "ID", childColumns = "aluno_id")})
 
+//@Entity(tableName = "TB_administrador")
+
 public class Administrador {
 
     /*
@@ -25,21 +27,13 @@ public class Administrador {
     @ColumnInfo(name = "aluno_id")
     private long alunoId;
 
-    /*
-    construtor vazio
-     */
-    public Administrador() {
-    }
-
-    /*
-    construtor
-     */
-    public Administrador(long id, String nomeAdministrador, String senhaAdministrador, long professorId, long alunoId) {
+    public Administrador(long id, String nomeAdministrador, String senhaAdministrador) {
         this.id = id;
         this.nomeAdministrador = nomeAdministrador;
         this.senhaAdministrador = senhaAdministrador;
-        this.professorId = professorId;
-        this.alunoId = alunoId;
+    }
+
+    public Administrador() {
     }
 
     /*

@@ -33,6 +33,7 @@ public interface AdministradorDAO {
     @Query("SELECT * FROM TB_administrador ORDER BY id")
     List<AdministradorJoin> loadAdministradorJoin();// nosso projeto não precisa usaar um Join ainda
 
+
     static class AdministradorJoin{
         @Embedded
         public Administrador administrador;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.AdministradorCadastroActivity">
+    tools:context=".activity.ExemploCadastroV2Activity">
 
     <TextView
         android:id="@+id/textView"
@@ -27,24 +27,10 @@
         android:ems="10"
         android:hint="Nome administrador"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edit_senhaAdministrador"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/edit_senhaAdministrador"
-        android:layout_width="216dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="Senha administrador"
-        android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_nomeAdministrador" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/cadastrar"
@@ -52,14 +38,13 @@
         android:layout_height="64dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/blue"
         android:onClick="salvarAdministrador"
         android:text="CADASTRAR"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_senhaAdministrador" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_nomeAdministrador" />
 
     <Button
         android:id="@+id/button"
@@ -67,11 +52,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="teste"
         android:onClick="teste"
+        android:text="teste"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrar" />
 
 </android.support.constraint.ConstraintLayout>

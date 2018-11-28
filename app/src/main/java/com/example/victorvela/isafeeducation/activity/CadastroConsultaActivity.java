@@ -20,7 +20,7 @@ public class CadastroConsultaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro_consulta);
 
         buttonSair          = findViewById(R.id.sair);
-        buttonAdministrador = findViewById(R.id.entrarAdministrador);
+        buttonAdministrador = findViewById(R.id.cadastrar);
 
         /*
         voltar para login

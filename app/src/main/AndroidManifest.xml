@@ -23,7 +23,10 @@
         <activity android:name=".activity.AdministradorActivity" />
         <activity android:name=".activity.AdministradorCadastroActivity" />
         <activity android:name=".activity.AdministradorDeletarActivity" />
-        <activity android:name=".activity.AdministradorAtualizarActivity"></activity>
+        <activity android:name=".activity.AdministradorAtualizarActivity" />
+        <activity android:name=".activity.ExemploActivity" />
+        <activity android:name=".activity.ExemploCadastroActivity" />
+        <activity android:name=".activity.ExemploCadastroV2Activity"></activity>
     </application>
 
 </manifest>
